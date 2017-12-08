@@ -15,7 +15,7 @@ In this exercise you're going to be challenged to write a program to score a bow
 
 Before starting make sure you understand the nuances of the game studying this example of a game. Walk through each frame making sure the score makes sense as you understand the rolls.
 
-![alt text](http://slocums.homestead.com/files/scrsheet.gif "bowling game frame")
+![bowling game frame](http://slocums.homestead.com/files/scrsheet.gif "bowling game frame")
 
 ## Purpose
 
