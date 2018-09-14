@@ -1,6 +1,8 @@
 # Bowling Challenge
 
-In this exercise you're going to be challenged to write a program to score a bowling game. Just in case it's been a while since you've last bowled, here is how you keep score:
+In this exercise you're going to be challenged to write a program to simulate a game of bowling. When you're done you should be able to run an instance of your `Game` class and have it return an array of bowling scores, and a final total score, for a game of bowling.
+
+ Just in case it's been a while since you've last bowled, here is how you keep score:
 
 1. A game has 10 frames(rounds)
 2. For each frame a player has two chances to knock 10 pins down.
@@ -16,7 +18,17 @@ In this exercise you're going to be challenged to write a program to score a bow
 Before starting make sure you understand the nuances of the game studying this example of a game. Walk through each frame making sure the score makes sense as you understand the rolls.
 
 ![bowling game frame](http://slocums.homestead.com/files/scrsheet.gif "bowling game frame")
-
 ## Purpose
 
-This exercise is an object oriented exercise focusing on *form*. The goal isn't just to make your program work, but instead should focus on a step by step, TDD driven approach. Write your most basic test case first and slowly work your way up.
+This exercise is an object oriented exercise focusing on *form*. The goal isn't just to make your program work, but instead should focus on a step by step, TDD driven approach. Write your most basic test case first and slowly work your way up. The below releases should act as a guideline if you are having trouble getting started. There are many ways to attack this problem, and you should feel free to make your own design choices / classes. Every method you'll need is not listed. This challenge is meant to push your understanding and implementation of OOP concepts. You may also find yourself moving between releases (adding and removing attributes and behaviors) from classes as your understanding of the program develops. 
+
+## Release 0 - Create A Frame Class 
+The Frame class will be in charge of holding the score for a single frame for a single player. So after our program runs, each player object will have ten frame objects. The frame should know if it is a spare or strike. What instance variables will you need to keep track of for each frame? What methods will you need to create? 
+ 
+## Release 1 - Create a Player Class 
+The player class will keep track of the player's score through out the game. The player should hold frame objects. It should be able to iterate over the frames and calculate the current score. 
+
+## Release 2 - Create the Game Class 
+The game class will be in charge of game logic. It should hold players, know what frame is currently being bowled and how many frames are left in the game. This is where you'll write your logic to simulate the game. What method or methods will you need to 'bowl' a frame? Your game class should have a method `play` that simulates a game and returns the scores for each player. 
+
+
