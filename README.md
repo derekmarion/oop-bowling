@@ -1,6 +1,6 @@
 # Bowling Challenge
 
-In this exercise you're going to be challenged to write a program to simulate a game of bowling. When you're done you should be able to run an instance of your `Game` class and have it return an array of bowling scores, and a final total score, for a game of bowling.
+In this exercise you will write a program to simulate a game of bowling. When you're done you should be able to run an instance of your `Game` class and have it return an array of bowling scores, and a final total score, for a game of bowling.
 
  Just in case it's been a while since you've last bowled, here is how you keep score:
 
