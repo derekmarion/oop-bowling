@@ -21,13 +21,13 @@ Before starting make sure you understand the nuances of the game studying this e
 ## Purpose
 
 
-## Release 0 - Create A Frame Class 
+## Step 1 - Create A Frame Class 
 The Frame class will be in charge of holding the score for a single frame for a single player. So after our program runs, each player object will have ten frame objects. The frame should know if it is a spare or strike. What instance variables will you need to keep track of for each frame? What methods will you need to create? 
  
-## Release 1 - Create a Player Class 
+## Step 2 - Create a Player Class 
 The player class will keep track of the player's score through out the game. The player should hold frame objects. It should be able to iterate over the frames and calculate the current score. 
 
-## Release 2 - Create the Game Class 
+## Step 3 - Create the Game Class 
 The game class will be in charge of game logic. It should hold players, know what frame is currently being bowled and how many frames are left in the game. This is where you'll write your logic to simulate the game. What method or methods will you need to 'bowl' a frame? Your game class should have a method `play` that simulates a game and returns the scores for each player. 
 
 
