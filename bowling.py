@@ -1,24 +1,27 @@
+import random
+
 class Frame:
-    def __init__(self, frame_score=0, strike=False):
-        self._frame_score = frame_score
-        self._strike = strike
-
-    @property
-    def get_frame_score(self):
-        return self._frame_score
-    
-    @get_frame_score.setter
-    def set_frame_score(self, score):
-        self._frame_score = score
+    def __init__(self):
+        self._rolls = []
+        self._pins = 10
     
     @property
-    def get_strike(self):
-        return self._strike
+    def get_rolls(self):
+        return self._rolls
     
-    @get_strike.setter
-    def set_strike(self, strike: bool):
-        self._strike = strike
+    def roll(self):
+        roll_score = random.randint(0, 10)
+        if roll_score < self._pins:
+            self._rolls.append(roll_score)
+            self._pins -= roll_score
+        elif roll_score > self._pins:
+            self._rolls.append(self._pins)
+            self._pins =- self._pins
+        else:
+            self._rolls.append(roll_score)
+        if self._rolls[0] != 10 and len(self._rolls) < 2:
+            self.roll()
 
-class Game:
-
-
+new_frame = Frame()
+new_frame.roll()
+print(new_frame.get_rolls)
